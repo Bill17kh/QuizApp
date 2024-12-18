@@ -1,3 +1,8 @@
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<link href="../Style/Style.css" rel="stylesheet">
+
 // Quiz questions will be fetched from API
 let questions = [];
 let currentQuestion = 0;
@@ -212,3 +217,5 @@ if (logoutBtn) {
         window.location.href = 'SignIn.html';
     });
 }
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

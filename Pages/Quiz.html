@@ -2,46 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz</title>
+    <title>Quiz - Brain Quest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../Style/Style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="../Style/Style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-links">
             <a href="Home.html">Home</a>
-            <a href="Activites.html">Activities</a>
+            <a href="Activities.html">Activities</a>
             <a href="Quiz.html" class="active">Quiz</a>
-            <div class="dropdown">
-                <button class="btn btn-link dropdown-toggle" type="button" id="accountDropdown" 
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                    Account
-                </button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
-                    <li><a class="dropdown-item" href="Account.html">View Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#" id="logoutBtn">Logout</a></li>
-                </ul>
+            <div class="account-buttons">
+                <a href="ViewProfile.html" class="profile-btn">
+                    <i class="fas fa-user me-2"></i>Profile
+                </a>
+                <a href="#" id="logoutBtn" class="logout-btn">
+                    <i class="fas fa-sign-out-alt me-2"></i>Logout
+                </a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container py-5">
         <div id="quiz-container" class="card shadow-lg">
             <div class="card-body">
                 <div class="d-flex justify-content-between align-items-center mb-4">
                     <h4 id="question-number">Question 1/15</h4>
-                    <div class="timer" id="timer">Time: 30s</div>
+                    <div class="timer-container">
+                        <div id="timer" class="text-primary fw-bold">Time: 30s</div>
+                        <div class="progress">
+                            <div class="progress-bar" id="time-progress" role="progressbar" style="width: 100%"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="progress mb-4">
-                    <div class="progress-bar" id="time-progress" role="progressbar" style="width: 100%"></div>
+
+                <div class="question-container mb-4">
+                    <h2 id="question" class="mb-4">Loading question...</h2>
+                    <div id="choices" class="d-grid gap-3">
+                        <!-- Choices will be added dynamically -->
+                    </div>
                 </div>
-                <h2 id="question" class="mb-4">Loading question...</h2>
-                <div id="choices" class="d-grid gap-3">
-                    <!-- Choices will be added dynamically -->
-                </div>
-                <div class="mt-4 text-center">
-                    <button id="next-btn" class="btn btn-primary" style="display: none;">Next Question</button>
+
+                <div class="text-center">
+                    <button id="next-btn" class="btn btn-primary" style="display: none;">
+                        Next Question <i class="fas fa-arrow-right ms-2"></i>
+                    </button>
                 </div>
             </div>
         </div>
