@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px 0;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, 
+.nav-links a.active {
+    background: #eef2ff;
+    color: #7f7fd5;
+}
+
+.nav-links .logout-btn {
+    background: #ff4757;
+    color: white;
+}
+
+.nav-links .logout-btn:hover {
+    background: #ff6b81;
+    color: white;
+}
+
+.account-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.account-btn, .logout-btn {
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.account-btn {
+    background: #eef2ff;
+    color: #7f7fd5;
+}
+
+.logout-btn {
+    background: #ff4757;
+    color: white;
+}
+
+.account-btn:hover {
+    background: #7f7fd5;
+    color: white;
+}
+
+.logout-btn:hover {
+    background: #ff6b81;
+    color: white;
+}
+
+#quiz-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.choice-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    text-align: left;
+    padding: 15px;
+}
+
+.score-container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #1a73e8;
+    color: white;
+    border-radius: 4px;
+}
+
+#activity-list {
+    margin-top: 20px;
+}
+
+.activity-item {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-toggle {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.dropdown-toggle:hover {
+    color: #1a73e8;
+}
+
+.timer {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+.score-details {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.choice-btn {
+    transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+    transform: translateX(5px);
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+.user-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.hero-image {
+    max-width: 400px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.display-4 {
+    font-weight: 700;
+    color: #2d3436;
+}
+
+.lead {
+    color: #636e72;
+    font-size: 1.25rem;
+}
+
+.start-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #7f7fd5, #86a8e7);
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.start-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    color: white;
+}
+
+/* Features Section Styles */
+.features-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.feature-card {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #7f7fd5;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #2d3436;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #636e72;
+    font-style: italic;
+}
+
+/* Quiz Score Styles */
+.score-circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #7f7fd5, #86a8e7);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+}
+
+.score-number {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.score-percent {
+    font-size: 1.5rem;
+}
+
+.score-details {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Navbar Enhancement */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links a {
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #7f7fd5;
+}
+
+/* Quiz Container Enhancement */
+#quiz-container {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.choice-btn {
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.choice-btn:hover {
+    background-color: #f8f9fa;
+    transform: translateX(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0;
+    }
+    
+    .hero-image {
+        max-width: 300px;
+        margin-top: 40px;
+    }
+    
+    .feature-card {
+        margin-bottom: 20px;
+    }
+}

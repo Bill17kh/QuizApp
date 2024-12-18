@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Profile - Brain Quest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style/Style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Activites.html">Activities</a>
+            <a href="Quiz.html">Quiz</a>
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" id="accountDropdown" 
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                    Account
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="accountDropdown">
+                    <li><a class="dropdown-item active" href="Account.html">View Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-lg rounded-3">
+                    <div class="card-body p-5">
+                        <div class="text-center mb-5">
+                            <div class="position-relative d-inline-block">
+                                <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+                                     alt="Profile" class="rounded-circle profile-image mb-3">
+                                <button class="btn btn-light rounded-circle position-absolute bottom-0 end-0">
+                                    <i class="fas fa-camera"></i>
+                                </button>
+                            </div>
+                            <h3 class="mb-1" id="username">Loading...</h3>
+                            <p class="text-muted" id="email">Loading...</p>
+                        </div>
+
+                        <div class="row g-4 mb-5">
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-trophy mb-3 text-primary"></i>
+                                    <h5>Total Quizzes</h5>
+                                    <p id="total-quizzes" class="mb-0">0</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-star mb-3 text-warning"></i>
+                                    <h5>Average Score</h5>
+                                    <p id="average-score" class="mb-0">0%</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="stat-card">
+                                    <i class="fas fa-crown mb-3 text-success"></i>
+                                    <h5>Best Score</h5>
+                                    <p id="best-score" class="mb-0">0%</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recent-activity">
+                            <h4 class="mb-4">
+                                <i class="fas fa-history me-2"></i>
+                                Recent Activity
+                            </h4>
+                            <div id="recent-activities" class="list-group">
+                                <!-- Activities will be added dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/account.js"></script>
+</body>
+</html> 

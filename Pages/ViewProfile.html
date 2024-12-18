@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Profile - Brain Quest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../Style/Style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="Home.html">Home</a>
+            <a href="Activities.html">Activities</a>
+            <a href="Quiz.html">Quiz</a>
+            <div class="account-buttons">
+                <a href="Account.html" class="account-btn">Account</a>
+                <a href="#" id="logoutBtn" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-lg mb-4">
+                    <div class="card-body text-center">
+                        <div class="position-relative d-inline-block mb-3">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+                                 alt="Profile" class="rounded-circle profile-image">
+                            <button class="btn btn-light rounded-circle position-absolute bottom-0 end-0">
+                                <i class="fas fa-camera"></i>
+                            </button>
+                        </div>
+                        <h4 id="profile-name">Loading...</h4>
+                        <p class="text-muted" id="profile-email">Loading...</p>
+                        <button class="btn btn-primary" id="edit-profile-btn">
+                            <i class="fas fa-edit me-2"></i>Edit Profile
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h4 class="card-title mb-4">Profile Details</h4>
+                        <div class="profile-details">
+                            <div class="row mb-3">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Username</h6>
+                                </div>
+                                <div class="col-sm-9 text-muted" id="detail-username">
+                                    Loading...
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mb-3">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Email</h6>
+                                </div>
+                                <div class="col-sm-9 text-muted" id="detail-email">
+                                    Loading...
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mb-3">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Join Date</h6>
+                                </div>
+                                <div class="col-sm-9 text-muted" id="detail-joindate">
+                                    Loading...
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row mb-3">
+                                <div class="col-sm-3">
+                                    <h6 class="mb-0">Total Quizzes</h6>
+                                </div>
+                                <div class="col-sm-9 text-muted" id="detail-quizzes">
+                                    Loading...
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/viewProfile.js"></script>
+</body>
+</html> 
